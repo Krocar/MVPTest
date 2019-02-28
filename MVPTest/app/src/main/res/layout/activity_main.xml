@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation ="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递公司名:"/>
+        
+        <EditText
+            android:id="@+id/post_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yuantong"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号："/>
+        
+        <EditText
+            android:id="@+id/post_id_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="500379523313"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/post_search_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"/>
+    
+    <ListView
+        android:id="@+id/post_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@null"
+        android:background="@null">
+    </ListView>
+
+</LinearLayout>
